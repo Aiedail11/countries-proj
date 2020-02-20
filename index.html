@@ -2,13 +2,23 @@
 <html>
     <head></head>
     <body>
-    <h1>Welcome to the Countries and Cities Database</h1>
-    <form>
-        <label for="country" name = "country">Select a country:</label>
-        <select id="country" name = "country">
-            <!-- This is where we pull the country options-->
-            
-        </select>
-    </form>
-</body>
+        <main>
+            <h1>Welcome to the Countries and Cities Database</h1>
+            <form>
+                <p>Select a country:</p>
+                <label for="country"></label>  
+                <select id="countryDropdown" name = "country">
+
+                </select>
+            </form>
+           
+            <form>
+                <p>Select a city:</p>
+                <label for="city"></label> 
+                <select id="cityDropdown" name = "city"></select> 
+            </form>
+        </main>
+        <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+        <script src="./main.js"></script>
+    </body>
 </html>
