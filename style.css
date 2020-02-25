@@ -19,6 +19,8 @@ main {
     border-radius: 15px;
     padding: 0px 10px;
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr;
     border: 2px rgb(179, 112, 89) solid;
     margin: 0 auto;
     

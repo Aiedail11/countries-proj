@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <link href="./style.css" type="text/css" rel="stylesheet">
-    <head></head>
+    
+    <head>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <link href="./animate.css" rel="stylesheet">
+    </head>
     <body>
         <main>
             <h1>Country-State Code Lookup</h1>
@@ -20,7 +23,9 @@
                 <select id="stateDropdown" name = "state" onchange = "updateCountryStateCode()"></select> 
             </form>
 
-            <div id="country-state-code"></div>
+            <div id="codeContainer">
+                <div id="country-state-code"></div>
+            </div>
         </main>
         <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
         <script src="./main.js"></script>
