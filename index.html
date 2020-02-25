@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
+    <link href="./style.css" type="text/css" rel="stylesheet">
     <head></head>
     <body>
         <main>
-            <h1>Welcome to the Countries and Cities Database</h1>
+            <h1>Country-State Code Lookup</h1>
             <form>
                 <p>Select a country:</p>
                 <label for="country"></label>  
-                <select id="countryDropdown" name = "country">
+                <select id="countryDropdown" name = "country" onchange="getStates()">
 
                 </select>
+               
             </form>
            
             <form>
-                <p>Select a city:</p>
-                <label for="city"></label> 
-                <select id="cityDropdown" name = "city"></select> 
+                <p>Select a state:</p>
+                <label for="state"></label> 
+                <select id="stateDropdown" name = "state" onchange = "updateCountryStateCode()"></select> 
             </form>
+
+            <div id="country-state-code"></div>
         </main>
         <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
         <script src="./main.js"></script>
