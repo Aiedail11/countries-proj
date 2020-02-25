@@ -70,9 +70,9 @@ const updateCountryStateCode = () => {
     countryStateCode.classList.add('animated', 'bounce');
    // countryStateCode.classList.add('animation-iteration-count', '3');
    //countryStateCode.animateCss('bounce');
-    setTimeout(() => {
+    countryStateCode.addEventListener('animationend', () => {
         countryStateCode.classList.remove('animated', 'bounce');  
-    }, 2000);
+    });
   // let twinCode = countryStateCode.cloneNode(true);
   // countryStateCode.parentElement.replaceChild(twinCode, countryStateCode);
    //.replaceChild(twinCode, countryStateCode);
